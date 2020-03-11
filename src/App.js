@@ -29,7 +29,7 @@ constructor(){
         <h1>
           <pre>TwitterMessage</pre>
         </h1>
-        <TwitterMessage maxChars={this.state.maxChars} />
+        <TwitterMessage maxChars={280} />
 
 
 
