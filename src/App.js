@@ -7,6 +7,12 @@ class App extends Component {
   login = ({ username, password }) => {
     console.log(`Logging in ${username} with password ${password}`);
   };
+  handeChange =(event)=>{
+    this.setState({
+      inputsh:event.target.value,
+      remainingItem:this.props.maxChars - this.state.inputsh.length
+    })}
+
 
   render() {
     return (
