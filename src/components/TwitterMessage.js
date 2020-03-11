@@ -22,6 +22,7 @@ handeChange =(event)=>{
       <div>
         <strong>Your message:</strong>
         <input type="text" name="message" id="message" value={this.props.maxChars} onChange={this.handeChange}/>
+        {this.state.remainingItem}
       </div>
     );
   }
