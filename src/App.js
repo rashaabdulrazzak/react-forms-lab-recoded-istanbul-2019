@@ -12,7 +12,7 @@ constructor(){
 }
 
 
-  login = ({ username, password }) => {
+  login = ({ username, password },event) => {
     event.preventDefault()
     console.log(`Logging in ${username} with password ${password}`);
   };
