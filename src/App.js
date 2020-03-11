@@ -10,14 +10,15 @@ constructor(){
     message : ''
   }
 }
+handleChange =(event)=>{
+  this.setState({
+    message:event.target.value,
+    //message:this.state.maxChars - this.state.message.length
+  })}
+
   login = ({ username, password }) => {
     console.log(`Logging in ${username} with password ${password}`);
   };
-  handeChange =(event)=>{
-    this.setState({
-      message:event.target.value,
-      //message:this.state.maxChars - this.state.message.length
-    })}
 
 
   render() {
