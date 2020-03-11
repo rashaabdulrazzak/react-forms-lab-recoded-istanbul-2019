@@ -6,8 +6,8 @@ class App extends Component {
 constructor(){
   super()
   this.state ={
-    maxChars : 280 ,
-    message : ''
+    maxChars : 280
+
   }
 }
 
