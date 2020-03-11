@@ -16,7 +16,7 @@ constructor(){
   handeChange =(event)=>{
     this.setState({
       message:event.target.value,
-      message:this.state.maxChars - this.state.message.length
+      //message:this.state.maxChars - this.state.message.length
     })}
 
 
