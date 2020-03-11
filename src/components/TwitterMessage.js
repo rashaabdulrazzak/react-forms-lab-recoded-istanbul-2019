@@ -14,8 +14,8 @@ handeChange =(event)=>{
     inputsh:event.target.value,
     remainingItem:this.props.maxChars - this.state.inputsh.length
   })
-  
-  
+
+
 }
   render() {
     return (
