@@ -30,7 +30,7 @@ handleChange = event => {
         <h1>
           <pre>LoginForm</pre>
         </h1>
-        <LoginForm handleLogin={this.login} handleChange={this.handleChange} />
+        <LoginForm handleLogin={this.login} values = {this.state}handleChange={this.handleChange} />
 
         <h1>
           <pre>TwitterMessage</pre>
