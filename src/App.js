@@ -10,11 +10,7 @@ constructor(){
     message : ''
   }
 }
-handleChange =(event)=>{
-  this.setState({
-    message:event.target.value
-    //message:this.state.maxChars - this.state.message.length
-  })}
+
 
   login = ({ username, password }) => {
     console.log(`Logging in ${username} with password ${password}`);
@@ -33,7 +29,7 @@ handleChange =(event)=>{
         <h1>
           <pre>TwitterMessage</pre>
         </h1>
-        <TwitterMessage maxChars={this.state.maxChars} message={this.state.message} handleChange={this.handleChange} />
+        <TwitterMessage maxChars={this.state.maxChars} message={this.state.message} />
 
 
 
