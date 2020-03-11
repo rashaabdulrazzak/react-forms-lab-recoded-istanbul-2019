@@ -12,7 +12,7 @@ constructor(){
 }
 handleChange =(event)=>{
   this.setState({
-    message:event.target.value,
+    message:event.target.value
     //message:this.state.maxChars - this.state.message.length
   })}
 
