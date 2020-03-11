@@ -12,7 +12,11 @@ constructor(){
   }
 }
 
-
+handleChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
   login = ({ username, password }) => {
     event.preventDefault()
     console.log(`Logging in ${username} with password ${password}`);
