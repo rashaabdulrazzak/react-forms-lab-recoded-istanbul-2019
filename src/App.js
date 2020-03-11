@@ -6,17 +6,12 @@ class App extends Component {
 constructor(){
   super()
   this.state ={
-    username:'',
-    password:''
+
 
   }
 }
 
-handleChange = event => {
-    this.setState({
-      [event.target.name]: event.target.value
-    })
-  }
+
   login = ({ username, password }) => {
     event.preventDefault()
     console.log(`Logging in ${username} with password ${password}`);
@@ -30,7 +25,7 @@ handleChange = event => {
         <h1>
           <pre>LoginForm</pre>
         </h1>
-        <LoginForm handleLogin={this.login} values = {this.state} handleChange={this.handleChange} />
+        <LoginForm handleLogin={this.login} />
 
         <h1>
           <pre>TwitterMessage</pre>
